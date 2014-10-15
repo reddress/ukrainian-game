@@ -6,6 +6,12 @@ def f(x):
 f(3)
 
 def checkio(data):
+    '''Iterate through the list of numbers, checking if it exists to
+    its right or in accumulated list (results list) of non-unique numbers.
+
+    If the current number exists in either list, it is added to the results.
+    '''
+    
     #Your code here
     #It's main function. Don't remove this function
     #It's used for auto-testing and must return a result for check.  
@@ -24,7 +30,7 @@ def checkio(data):
     input = data
     
     for i in range(len(data)):
-        print(input)
+        # print(input)
         if input[0] in result + input[1:]:
             result.append(input[0])
         input = input[1:]
